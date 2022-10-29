@@ -15,15 +15,15 @@ for (int i = 0; i < size; i++)
     arrayStrings[i] = element;
 }
 string[] arrayElements = new string[size];
-int len = 3;
-int pos = 0;
+int leng = 3;
+int position = 0;
 
 for (int e = 0; e < size; e++)
 {
-    if (arrayStrings[e].Length <= len)
+    if (arrayStrings[e].Length <= leng)
     {
-        arrayElements[pos] = arrayStrings[e];
-        pos++;
+        arrayElements[position] = arrayStrings[e];
+        position++;
     }
 }
 System.Console.WriteLine();
@@ -33,8 +33,8 @@ void PrintArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        System.Console.Write(array[i] + " ");
-    }
- 
+        System.Console.WriteLine($"Элементы соответствующие требованиям массива [{array[i]}]");
+    }   
+     
     System.Console.WriteLine();
 }
