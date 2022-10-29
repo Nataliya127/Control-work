@@ -26,3 +26,15 @@ for (int e = 0; e < size; e++)
         pos++;
     }
 }
+System.Console.WriteLine();
+PrintArray(arrayElements);
+
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        System.Console.Write(array[i] + " ");
+    }
+ 
+    System.Console.WriteLine();
+}
